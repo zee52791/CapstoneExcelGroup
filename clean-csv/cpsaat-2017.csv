@@ -1,52 +1,52 @@
 ,,2017,2017,2017,2017,2017,2017,2017,2017
 ,,Less than a high school diploma,"High school graduates, no college",Some college or associate degree,Some college or associate degree,Some college or associate degree,Bachelor's degree and higher,Bachelor's degree and higher,Bachelor's degree and higher
 ,,Less than a high school diploma,"High school graduates, no college",Total,"Some college, no degree",Associate degree,Total,Bachelor's degree only,Advanced degree
-TOTAL,Civilian noninstitutional population,"22,638","62,192","57,261","35,211","22,050","74,838","47,056","27,782"
-TOTAL,Civilian labor force,"10,343","35,874","37,696","22,339","15,357","55,246","34,480","20,766"
+TOTAL,Civilian noninstitutional population,22638.0,62192.0,57261.0,35211.0,22050.0,74838.0,47056.0,27782.0
+TOTAL,Civilian labor force,10343.0,35874.0,37696.0,22339.0,15357.0,55246.0,34480.0,20766.0
 TOTAL,Participation rate,45.7,57.7,65.8,63.4,69.6,73.8,73.3,74.7
-TOTAL,Employed,"9,668","34,210","36,282","21,440","14,842","53,971","33,620","20,351"
+TOTAL,Employed,9668.0,34210.0,36282.0,21440.0,14842.0,53971.0,33620.0,20351.0
 TOTAL,Employment-population ratio,42.7,55.0,63.4,60.9,67.3,72.1,71.4,73.3
-TOTAL,Unemployed,674,"1,664","1,414",899,515,"1,275",860,415
+TOTAL,Unemployed,674.0,1664.0,1414.0,899.0,515.0,1275.0,860.0,415.0
 TOTAL,Unemployment rate,6.5,4.6,3.8,4.0,3.4,2.3,2.5,2.0
-Men,Civilian noninstitutional population,"11,220","30,948","26,310","16,813","9,497","35,579","22,288","13,291"
-Men,Civilian labor force,"6,529","20,944","19,003","11,811","7,193","27,781","17,545","10,236"
+Men,Civilian noninstitutional population,11220.0,30948.0,26310.0,16813.0,9497.0,35579.0,22288.0,13291.0
+Men,Civilian labor force,6529.0,20944.0,19003.0,11811.0,7193.0,27781.0,17545.0,10236.0
 Men,Participation rate,58.2,67.7,72.2,70.2,75.7,78.1,78.7,77.0
-Men,Employed,"6,129","20,013","18,324","11,355","6,969","27,172","17,137","10,035"
+Men,Employed,6129.0,20013.0,18324.0,11355.0,6969.0,27172.0,17137.0,10035.0
 Men,Employment-population ratio,54.6,64.7,69.6,67.5,73.4,76.4,76.9,75.5
-Men,Unemployed,401,931,679,456,223,608,408,200
+Men,Unemployed,401.0,931.0,679.0,456.0,223.0,608.0,408.0,200.0
 Men,Unemployment rate,6.1,4.4,3.6,3.9,3.1,2.2,2.3,2.0
-Women,Civilian noninstitutional population,"11,418","31,244","30,951","18,399","12,553","39,259","24,768","14,491"
-Women,Civilian labor force,"3,813","14,930","18,693","10,528","8,165","27,465","16,935","10,531"
+Women,Civilian noninstitutional population,11418.0,31244.0,30951.0,18399.0,12553.0,39259.0,24768.0,14491.0
+Women,Civilian labor force,3813.0,14930.0,18693.0,10528.0,8165.0,27465.0,16935.0,10531.0
 Women,Participation rate,33.4,47.8,60.4,57.2,65.0,70.0,68.4,72.7
-Women,Employed,"3,540","14,197","17,958","10,085","7,873","26,799","16,483","10,316"
+Women,Employed,3540.0,14197.0,17958.0,10085.0,7873.0,26799.0,16483.0,10316.0
 Women,Employment-population ratio,31.0,45.4,58.0,54.8,62.7,68.3,66.5,71.2
-Women,Unemployed,273,733,735,443,292,667,452,215
+Women,Unemployed,273.0,733.0,735.0,443.0,292.0,667.0,452.0,215.0
 Women,Unemployment rate,7.2,4.9,3.9,4.2,3.6,2.4,2.7,2.0
-White,Civilian noninstitutional population,"17,229","48,904","45,284","27,518","17,766","59,485","37,765","21,719"
-White,Civilian labor force,"8,151","27,837","29,366","17,127","12,239","43,563","27,607","15,957"
+White,Civilian noninstitutional population,17229.0,48904.0,45284.0,27518.0,17766.0,59485.0,37765.0,21719.0
+White,Civilian labor force,8151.0,27837.0,29366.0,17127.0,12239.0,43563.0,27607.0,15957.0
 White,Participation rate,47.3,56.9,64.8,62.2,68.9,73.2,73.1,73.5
-White,Employed,"7,690","26,710","28,388","16,515","11,872","42,662","26,986","15,676"
+White,Employed,7690.0,26710.0,28388.0,16515.0,11872.0,42662.0,26986.0,15676.0
 White,Employment-population ratio,44.6,54.6,62.7,60.0,66.8,71.7,71.5,72.2
-White,Unemployed,461,"1,127",978,612,366,902,621,281
+White,Unemployed,461.0,1127.0,978.0,612.0,366.0,902.0,621.0,281.0
 White,Unemployment rate,5.7,4.1,3.3,3.6,3.0,2.1,2.2,1.8
-Black or African American,Civilian noninstitutional population,"3,218","8,863","7,939","5,212","2,726","6,478","4,104","2,375"
-Black or African American,Civilian labor force,"1,186","5,302","5,550","3,550","2,000","5,055","3,179","1,876"
+Black or African American,Civilian noninstitutional population,3218.0,8863.0,7939.0,5212.0,2726.0,6478.0,4104.0,2375.0
+Black or African American,Civilian labor force,1186.0,5302.0,5550.0,3550.0,2000.0,5055.0,3179.0,1876.0
 Black or African American,Participation rate,36.9,59.8,69.9,68.1,73.4,78.0,77.5,79.0
-Black or African American,Employed,"1,038","4,889","5,230","3,335","1,894","4,874","3,050","1,823"
+Black or African American,Employed,1038.0,4889.0,5230.0,3335.0,1894.0,4874.0,3050.0,1823.0
 Black or African American,Employment-population ratio,32.3,55.2,65.9,64.0,69.5,75.2,74.3,76.8
-Black or African American,Unemployed,148,412,321,215,106,182,129,53
+Black or African American,Unemployed,148.0,412.0,321.0,215.0,106.0,182.0,129.0,53.0
 Black or African American,Unemployment rate,12.5,7.8,5.8,6.1,5.3,3.6,4.0,2.8
-Asian,Civilian noninstitutional population,"1,237","2,491","2,076","1,192",884,"7,327","4,139","3,188"
-Asian,Civilian labor force,503,"1,515","1,420",788,632,"5,409","2,881","2,528"
+Asian,Civilian noninstitutional population,1237.0,2491.0,2076.0,1192.0,884.0,7327.0,4139.0,3188.0
+Asian,Civilian labor force,503.0,1515.0,1420.0,788.0,632.0,5409.0,2881.0,2528.0
 Asian,Participation rate,40.7,60.8,68.4,66.1,71.5,73.8,69.6,79.3
-Asian,Employed,481,"1,474","1,375",764,611,"5,261","2,800","2,460"
+Asian,Employed,481.0,1474.0,1375.0,764.0,611.0,5261.0,2800.0,2460.0
 Asian,Employment-population ratio,38.9,59.2,66.2,64.1,69.1,71.8,67.7,77.2
-Asian,Unemployed,22,41,45,24,21,148,81,68
+Asian,Unemployed,22.0,41.0,45.0,24.0,21.0,148.0,81.0,68.0
 Asian,Unemployment rate,4.4,2.7,3.2,3.0,3.4,2.7,2.8,2.7
-Hispanic or Latino ethnicity,Civilian noninstitutional population,"9,728","10,012","7,220","4,566","2,654","5,880","4,152","1,728"
-Hispanic or Latino ethnicity,Civilian labor force,"5,755","6,967","5,406","3,393","2,013","4,661","3,247","1,414"
+Hispanic or Latino ethnicity,Civilian noninstitutional population,9728.0,10012.0,7220.0,4566.0,2654.0,5880.0,4152.0,1728.0
+Hispanic or Latino ethnicity,Civilian labor force,5755.0,6967.0,5406.0,3393.0,2013.0,4661.0,3247.0,1414.0
 Hispanic or Latino ethnicity,Participation rate,59.2,69.6,74.9,74.3,75.8,79.3,78.2,81.8
-Hispanic or Latino ethnicity,Employed,"5,462","6,642","5,196","3,258","1,937","4,525","3,139","1,386"
+Hispanic or Latino ethnicity,Employed,5462.0,6642.0,5196.0,3258.0,1937.0,4525.0,3139.0,1386.0
 Hispanic or Latino ethnicity,Employment-population ratio,56.1,66.3,72.0,71.4,73.0,77.0,75.6,80.2
-Hispanic or Latino ethnicity,Unemployed,293,325,210,134,76,136,107,29
+Hispanic or Latino ethnicity,Unemployed,293.0,325.0,210.0,134.0,76.0,136.0,107.0,29.0
 Hispanic or Latino ethnicity,Unemployment rate,5.1,4.7,3.9,4.0,3.8,2.9,3.3,2.0
