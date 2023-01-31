@@ -270,6 +270,7 @@ state_income = household_abbr[["State", "Median Household Income by State: 1990"
 
 state_income = state_income[(state_income["State"] !="US")]
 
+years = [1990, 2000, 2005, 2010, 2014, 2015, 2016, 2017, 2018, 2019]
 
 # cleaning the data for household dataset
 household.columns = household.columns.str.strip()
@@ -541,6 +542,7 @@ sidebar = html.Div(
                 dbc.NavLink("Question 3", href="/page-3", active="exact"),
                 dbc.NavLink("Question 4", href="/page-4", active="exact"),
                 dbc.NavLink("Question 5", href="/page-5", active="exact"),
+                dbc.NavLink("Machine Learning", href="/page-6", active="exact")
             ],
             vertical=True,
             pills=True,
@@ -564,29 +566,60 @@ def render_page_content(pathname):
         return html.H2("What is the per capita income for the different levels of education?"), dcc.Graph(id='sex-income-graph',figure=sex_fig), dcc.Graph(id='race-income-graph',figure=race_fig)
     elif pathname == "/page-2":
         return html.H2("What is the average household income per state compared to the US as a whole?"), dcc.Graph(id='household-income-graph',figure=houseincome), \
-            dcc.Graph(id='income-by-state-graph',figure={
-            'data': [
+            dcc.Graph(id='income-by-state-graph', figure={
+        'data': [
+            go.Choropleth(
+                locations=state_income['State'],
+                z=state_income['Median Household Income by State: 1990'],
+                locationmode='USA-states',
+                colorscale='reds',
+                colorbar=dict(title='Median Household Income by State: 1990'),
+                zmin=20000,
+                zmax=max(state_income['Median Household Income by State: 1990']),
+                marker=dict(line=dict(width=0.7))
+            )
+        ],
+        'layout': go.Layout(
+            title='Median Household Income by State',
+            geo=dict(
+                scope='usa',
+                projection=go.layout.geo.Projection(type='albers usa'),
+                showlakes=True,
+                lakecolor='rgb(255, 255, 255)'
+            ),
+            updatemenus=[dict(
+                type='buttons',
+                showactive=True,
+                buttons=[
+                    dict(
+                        label='Play',
+                        method='animate',
+                        args=[None, {'frame': {'duration': 800, 'redraw': True}, 'fromcurrent': True, 'transition': {'duration': 100}}]
+                    ),
+                    dict(
+                        label='Pause',
+                        method='animate',
+                        args=[
+                            [None],
+                            {'frame': {'duration': 0, 'redraw': False}, 'mode': 'immediate', 'transition': {'duration': 0}}
+                        ]
+                    )
+                ]
+            )]
+        ),
+        'frames': [go.Frame(
+            data=[
                 go.Choropleth(
                     locations=state_income['State'],
-                    z=state_income['Median Household Income by State: 2019'].astype(float),
+                    z=state_income['Median Household Income by State: {}'.format(year)].astype(float),
                     locationmode='USA-states',
-                    colorscale='viridis',
                     autocolorscale=False,
                     marker_line_color='grey',
-                    colorbar_title="Average Income"
+                    colorbar=dict(title='Median Household Income by State: {}'.format(year)),
                 )
-            ],
-            'layout': go.Layout(
-                title='2019 Average Income by State',
-                geo=dict(
-                    scope='usa',
-                    projection=go.layout.geo.Projection(type='albers usa'),
-                    showlakes=True,
-                    lakecolor='rgb(255, 255, 255)'
-                ),
-            )
-        }
-    ),
+            ]
+        ) for year in years]
+    })
     elif pathname == "/page-3":
         return html.H2("What is the unemployment rate for the different levels of education?"), dcc.Graph(id='unemployment-rate-graph',figure= fig), \
                 dcc.Graph(id='employment-rate-graph',
@@ -659,7 +692,9 @@ def render_page_content(pathname):
                 yaxis={'title': 'Mean Income Estimate'},
                 template = 'ggplot2',
                 barmode='stack'
-            )})
+            )}),
+    elif pathname == "/page-6":
+        return html.H2("What is the per capita income for the different levels of education?"), dcc.Graph(id='sex-income-graph',figure=sex_fig), dcc.Graph(id='race-income-graph',figure=race_fig)
     # If the user tries to reach a different page, return a 404 message
     return html.Div(
         [
