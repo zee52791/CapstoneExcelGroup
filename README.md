@@ -1,3 +1,3 @@
-# Education Level VS Income and Unemployment Rates in the US
+# The Correlation Between Education Attainment, Income and Employment Rates in The US
 ## Authors
 Zeeshan Pervaiz, Sarvani Dantuluri, Rob Dewan, Cheyenne Peterson
