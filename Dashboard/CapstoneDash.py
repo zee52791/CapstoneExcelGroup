@@ -602,7 +602,7 @@ houseincome_fig = px.line(household_degrees2, y=["Not a High School Graduate Mea
 "Bachelor's Degree Mean","Advanced Degree Mean"], x="Year", color= "Race")
 
 houseincome_fig.update_layout(title="Average Household Income for the Different Identified Races",
-                  xaxis_title="Year", yaxis_title="Average Household Income")
+                  xaxis_title="Year", yaxis_title="Average Household Income", showlegend = True)
 
 houseincome_fig.update_layout(xaxis = dict(tickmode = 'array',tickvals = [2015,2016,2017,2018,2019],))
 
@@ -613,40 +613,41 @@ houseincome_fig.update_layout(
     updatemenus=[
         dict(
             type="dropdown",
+            showactive=True,
             buttons=list([
                 dict(
                     args=[{'visible': [True, False, False, False, False]},
-                          {'title': "Not a High School Graduate Mean"}],
+                          {'title': "Average Household Income of Non-High School Graduates"}],
                     label="No High School",
                     method="update"
                 ),
                 dict(
                     args=[{'visible': [False, True, False, False, False]},
-                          {'title': "High School Graduate Mean"}],
+                          {'title': "Average Household Income of High School Graduates"}],
                     label="High School Graduate",
                     method="update"
                 ),
                 dict(
                     args=[{'visible': [False, False, True, False, False]},
-                          {'title': "Some College/Associate's Degree Mean"}],
+                          {'title': "Average Household Income of Some College/Associate's Degree Earners"}],
                     label="Some College/Associates Degree",
                     method="update"
                 ),
                 dict(
                     args=[{'visible': [False, False, False, True, False]},
-                          {'title': "Bachelor's Degree Mean"}],
+                          {'title': "Average Household Income of Bachelor's Degree Earners"}],
                     label="Bachelor's Degree",
                     method="update"
                 ),
                 dict(
                     args=[{'visible': [False, False, False, False, True]},
-                          {'title': "Advanced Degree Mean"}],
+                          {'title': "Average Household Income of Advanced Degree Earners"}],
                     label="Advanced Degree",
                     method="update"
                 ),
             ]),
+            pad={'r': 10, 't': 10},
             direction="down",
-            showactive=True,
             xanchor="auto",
             yanchor="top"
         ),
@@ -858,7 +859,7 @@ def render_page_content(pathname):
     if pathname == "/":
         return html.H1(children='The Correlation Between Education Attainment, Employment, and Income', style = {'textAlign':'center','marginTop':40,'marginBottom':40, 'font-family':'verdana', 'font-weight':'bold', 'font-size':50, 'color':'white'}),\
             html.H3("The purpose of this dashboard is to explore datasets about Education, Income, and Unemployment Rates in the US. Our goal was to compare the different datasets and to answer any questions we had surrounding them. \
-            Questions that were answered were as follows: What is the per capita income for the different levels of education? What is the average household income per state compared to the US as a whole? \
+            We focused our research of the data through the various years to see how the data has changed. Questions that were answered were as follows: What is the per capita income for the different levels of education? What is the average household income per state compared to the US as a whole? \
             Does household income correlate to educational attainment? What is the unemployment rate for the different levels of education? How has educational attainment changed throughout the years in the US? How has income changed?",style = {'font-family':'verdana', 'font-size':35})
     elif pathname == "/page-1":
         return html.H2("What is the per capita income for the different levels of education?"), dcc.Graph(id='sex-income-graph',figure=sex_fig), dcc.Graph(id='race-income-graph',figure=race_fig)
