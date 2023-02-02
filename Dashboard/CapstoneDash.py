@@ -871,7 +871,7 @@ def render_page_content(pathname):
                 locations=state_income['State'],
                 z=state_income['Median Household Income by State: 1990'],
                 locationmode='USA-states',
-                colorscale='edge',
+                colorscale='reds',
                 colorbar=dict(title='Median Household Income by State: 1990'),
                 zmin=25000,
                 zmax=max(state_income['Median Household Income by State: 1990']),
@@ -997,7 +997,7 @@ def render_page_content(pathname):
                 paper_bgcolor='#C3F6F7'
             )}),dcc.Graph(id='percent-change-graph', figure=fig6),dcc.Graph(id='idk', figure=income_allyears_fig)
     elif pathname == "/page-6":
-        return html.H2("Can we predict whether or not an individual is unemployed?"), html.Img(src=DTR_path), html.Img(src=KNN_path), html.H3("Scores: Decision Tree = 0.57, KNN = 0.57, Linear Regression: 0.78, Ridge: 0.54"),\
+        return html.H2("Can we predict whether or not an individual is unemployed?"), html.Img(src=DTR_path), html.Img(src=KNN_path), html.H3("Scores: Decision Tree = 0.78, KNN = 0.57, Linear Regression: 0.54, Ridge: 0.54"),\
                 html.Img(src=LR_path),\
                     html.Img(src=RR_path)
     # If the user tries to reach a different page, return a 404 message
