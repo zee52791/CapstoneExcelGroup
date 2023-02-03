@@ -33,7 +33,7 @@ Tabn102-30 = SQL Table: Household | Median household income by state: selected y
 Taba-3 = SQL Table: Degrees | Mean earnings of workers 18 years and over, by educational attainment, race, and sex: 1975-2020 | Race(str), Sex(str), Year(int), Total Mean(float), Total Number with Earnings(float), Not a High School Graduate Mean(float), Not a High School Graduate Numbers with Earnings(float), High School Graduate Mean(float), High School Graduate Numbers with Earnings(float), Some College/Associate’s Degree Mean(float), Some College/Associate’s Degree with Earnings(float), Bachelor’s Degree Mean(float), Bachelor’s Degree Numbers with Earnings(float), Advanced Degree Mean(float), Advanced Degree Numbers with Earnings(float) | (872,15)
 
 ## Results
-(link to technical report)
+[Project Report](Deliverables/CapstoneProjectTechnicalReport.pdf)
 
 ## Sources
 CPS Tables :  U.S. Bureau of Labor Statistics. (2023, January 25). https://www.bls.gov/cps/tables.htm
